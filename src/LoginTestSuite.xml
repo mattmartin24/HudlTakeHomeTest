@@ -3,7 +3,7 @@
 <suite name="Login Test Cases">
 
     <test name="happyPathLogin">
-        <parameter name="validEmail" value="umamatt24.mm@gmail.com"/>
+        <parameter name="validEmail" value=""/>
         <parameter name="validPassword" value=""/>
         <classes>
             <class name="LoginTestCases">
@@ -15,7 +15,7 @@
     </test>
 
     <test name="invalidEmailLogin">
-        <parameter name="invalidEmail" value="thisisatestemail@hudl.com"/>
+        <parameter name="invalidEmail" value=""/>
         <parameter name="validPassword" value=""/>
         <classes>
             <class name="LoginTestCases">
@@ -27,7 +27,7 @@
     </test>
 
     <test name="invalidPasswordLogin">
-        <parameter name="validEmail" value="umamatt24.mm@gmail.com"/>
+        <parameter name="validEmail" value=""/>
         <parameter name="invalidPassword" value=""/>
         <classes>
             <class name="LoginTestCases">

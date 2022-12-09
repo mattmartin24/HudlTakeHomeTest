@@ -3,7 +3,7 @@
 <suite name="Logout Test Cases">
 
     <test name="logoutTest">
-        <parameter name="validEmail" value="umamatt24.mm@gmail.com"/>
+        <parameter name="validEmail" value=""/>
         <parameter name="validPassword" value=""/>
         <classes>
             <class name="LogoutTestCases">
