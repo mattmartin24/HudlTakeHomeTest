@@ -1,0 +1,61 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Login Test Cases">
+
+    <test name="happyPathLogin">
+        <parameter name="validEmail" value="umamatt24.mm@gmail.com"/>
+        <parameter name="validPassword" value=""/>
+        <classes>
+            <class name="LoginTestCases">
+                <methods>
+                    <include name="happyPathLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="invalidEmailLogin">
+        <parameter name="invalidEmail" value="thisisatestemail@hudl.com"/>
+        <parameter name="validPassword" value=""/>
+        <classes>
+            <class name="LoginTestCases">
+                <methods>
+                    <include name="invalidEmailLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="invalidPasswordLogin">
+        <parameter name="validEmail" value="umamatt24.mm@gmail.com"/>
+        <parameter name="invalidPassword" value=""/>
+        <classes>
+            <class name="LoginTestCases">
+                <methods>
+                    <include name="invalidPasswordLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="needHelpRedirect">
+        <classes>
+            <class name="LoginTestCases">
+                <methods>
+                    <include name="needHelpRedirect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="signUpRedirect">
+        <classes>
+            <class name="LoginTestCases">
+                <methods>
+                    <include name="signUpRedirect"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
